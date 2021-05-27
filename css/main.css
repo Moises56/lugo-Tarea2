@@ -1,0 +1,183 @@
+/* body {
+    padding-top: 5rem;
+}
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: "FuenteCol";
+    src: url("/Exo_2/Exo2-VariableFont_wght.ttf");
+}
+
+
+.nvColor{
+    background-color: #5C3287;
+}
+
+.selectF{
+    border-radius: 1rem;
+    width: 150px;
+}
+
+.btnOrden{
+    background-color: #371d51;
+    color: aliceblue; 
+    border-radius: 1.5rem;
+}
+
+.btn-newCategoria{
+    background-color: #9141e0;
+    color: aliceblue; 
+    border-radius: 1.5rem;
+}
+.btn-procesar{
+    background-color: #552783;
+    color: aliceblue; 
+    border-radius: 1.5rem;
+}
+
+.btnOrden:hover{
+    color: antiquewhite;
+}
+
+.targeta{
+    border-radius: 1.5rem;
+}
+
+.icono{
+    border-radius: 1.5rem;
+    background-color: #dad1d1;
+    padding: 5%;
+    margin: 5%;
+    width: 100px;
+    height: 100px;
+}
+
+.faIco{
+    padding-top: 20%;
+    font-size: -webkit-xxx-large;
+}
+
+.user{
+    font-family: 'Anton', sans-serif;
+    color: #5C3287;
+    font-size: 300%;
+}
+.user2{
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; 
+    color: #5C3287;
+}
+
+.categorias{
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+    font-size: 130%;
+}
+.comercio{
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; 
+    color: #ffffff;
+    font-size: larger;
+}
+
+.precio{
+    font-family: 'Anton', sans-serif;
+    color: #504c4c;
+    margin-left: 90%;
+}
+
+.precio2{
+    font-family: 'Anton', sans-serif;
+    color: #504c4c;
+    margin-left: 70%;
+}
+.precio3{
+    font-family: 'Anton', sans-serif;
+    color: #504c4c;
+    margin-left: 190%;
+}
+
+.btn-primary{
+    background-color: #440F71;
+    /* font-family: 'Anton', sans-serif; */
+    color: #ffffff; 
+    margin-left: 20%;
+    border-radius: 1.5rem;
+}
+
+.order{
+    background-color: #ffffffeb;
+    border-radius: 1.5rem;
+    border-style: ridge;
+}
+
+.modal-order{
+    background-color: #440F71;
+}
+
+.title-order{
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+    font-size: 190%;
+}
+
+
+.nombre-order{
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; 
+    color: #440F71;
+    font-size: xx-large;
+}
+
+.nombre-Producto{
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; 
+    color: #440F71;
+    font-size: x-large;
+}
+
+.btn-cerrar{
+    border-radius: 1.5rem;
+    background-color: #440F71;
+    color: #ffffff;
+    width: 30%;
+}
+
+.nomEmpresa{
+    font-family: 'Anton', sans-serif;
+    color: #5C3287;
+    font-size: 190%;
+    text-align: center;
+    /* position: fixed; */
+    /* padding-top: 15%; */
+}
+
+.card-img-top {
+    border-top-left-radius: calc(1.25rem - 1px);
+    border-top-right-radius: calc(1.25rem - 1px);
+}
+
+.card-stilo{
+    border-radius: 1.5rem;
+}
+
+.input-procesar{
+    margin-left: 70%;
+    position: absolute;
+    /* margin-top: 10%; */
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #440F71;
+    color: white;
+    text-align: center;
+}
+
+
