@@ -663,72 +663,29 @@ function btnPedir(ip){
     let app = indiceSelect
     // console.log(app[0].productos[0].nombreProducto);
  
-    // console.log(app[ip].nombreEmpresa);
-    // app.forEach(function(order){
-        // document.getElementById('nPro').innerHTML = ''    
-        // for (let p in app) {
-        // console.log(app[0].nombreEmpresa);
-        // if(app[p].nombreEmpresa == 'Empresa FARMANCIA 1'){
-        //     console.log(true);
-        // }else console.log(false);
-       
-            // console.log(app[0].productos[ip].nombreProducto);
-            // console.log(app[1].productos[ip].nombreProducto);
-            // console.log(app[2].productos[ip].nombreProducto);
-            // console.log(app[p].productos[ip].nombreProducto);
-            // console.log(app[ip].productos[ip].nombreProducto);
-            console.log(app[0].productos[ip].nombreProducto);
+    console.log(app[0].productos[ip].nombreProducto);
 
-            let nomPro = document.getElementById('nomPro').value = app[0].productos[ip].nombreProducto
-            let nomPro1 = document.getElementById('nomPro').value = app[1].productos[ip].nombreProducto
-            let nomPro2 = document.getElementById('nomPro').value = app[2].productos[ip].nombreProducto
-            console.log(document.getElementById('nomPro').value);
+    let nomPro = document.getElementById('nomPro').value = app[0].productos[ip].nombreProducto
+    let nomPro1 = document.getElementById('nomPro').value = app[1].productos[ip].nombreProducto
+    let nomPro2 = document.getElementById('nomPro').value = app[2].productos[ip].nombreProducto
+    console.log(document.getElementById('nomPro').value);
 
-            let desc = document.getElementById('descPro').value = app[0].productos[ip].descripcion
-            let desc1 = document.getElementById('descPro').value = app[1].productos[ip].descripcion
-            let desc2 = document.getElementById('descPro').value = app[2].productos[ip].descripcion
-            // console.log(desc);
-            
-            let prec = document.getElementById('prePro').value = app[0].productos[ip].precio
-            let prec1 = document.getElementById('prePro').value = app[1].productos[ip].precio
-            let prec2 = document.getElementById('prePro').value = app[2].productos[ip].precio
-
-
-            document.getElementById('nPro').innerHTML = `<h2 class="nombre-Producto">${nomPro}</h2>`
-            document.getElementById('desc').innerHTML = `<p>${desc}</p>`
-            document.getElementById('prec').innerHTML = `<span class="precio3" id="prec">$${prec}</span>`
-              
-        // }
-        // prod = order.productos
-        // for (const k in prod) {
-            // console.log(prod[k].nombreProducto);
-            // let nomPro = document.getElementById('nomPro').value = prod[k].nombreProducto
-            // console.log(nomPro);
-        // }
-    // });
+    let desc = document.getElementById('descPro').value = app[0].productos[ip].descripcion
+    let desc1 = document.getElementById('descPro').value = app[1].productos[ip].descripcion
+    let desc2 = document.getElementById('descPro').value = app[2].productos[ip].descripcion
+    // console.log(desc);
     
-//     var parrafo = document.getElementById('nomPro');
-//     var contenido = parrafo.innerHTML; 
-//   console.log(contenido);
-/* <p id="importante">Hola Mundo</p>
-var parrafo = document.getElementById('importante');
-var contenido = parrafo.innerHTML; */
-     for (const i in app) {
-        //  console.log(app[i].nombreCategoria);
-         let ord = app[i].empresas
-         for (const j in ord) {
-             order =ord[j].productos
-             // console.log(ord[j].productos);
-             for (const k in order) {
-                //  console.log(order[k].nombreProducto);
-                 let pro = order[k]
-                //  let nomPro = document.getElementById('nomPro').value = pro.nombreProducto
-                //  document.getElementById('nPro').innerHTML = `<h2 class="nombre-Producto">${nomPro}</h2>`
-             }
-         }
-    }
+    let prec = document.getElementById('prePro').value = app[0].productos[ip].precio
+    let prec1 = document.getElementById('prePro').value = app[1].productos[ip].precio
+    let prec2 = document.getElementById('prePro').value = app[2].productos[ip].precio
 
 
+    document.getElementById('nPro').innerHTML = `<h2 class="nombre-Producto">${nomPro}</h2>`
+    document.getElementById('desc').innerHTML = `<p>${desc}</p>`
+    document.getElementById('prec').innerHTML = `<span class="precio3" id="prec">$${prec}</span>`
+              
+       
+    
 //  let app = categorias[ip].empresas[ip].productos;
 //  console.log(app);
 //  let nomPro = document.getElementById('nPro').value = app[ip].nombreProducto
