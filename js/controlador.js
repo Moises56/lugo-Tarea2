@@ -522,8 +522,9 @@ $(document).ready(function(){
     var User = usuarios
     User.forEach(function(use) {
             user = use.nombre
+            apellido = use.apellido
 
-            var html = `<option value="${user}"> ${user} </option>`;
+            var html = `<option value="${user} ${apellido}"> ${user} ${apellido} </option>`;
             $('#usuarioActual').append(html);
 
             var users = document.getElementById("usuarioActual").value
@@ -571,7 +572,7 @@ function modalOrder(){
     // $("#usuarioActual").val()
     let nomUserActual = document.getElementById("usuarioActual").value
     if (nomUserActual == null) {
-        nomUserActual = 'Pedro'
+        nomUserActual = 'Pedro Martinez'
     }
     document.getElementById('nombreTitle').innerHTML = 
     `<h5 class="modal-title title-order" id="exampleModalLabel">${nomUserActual}, Estas son tus Ordenes </h5>` 
@@ -582,6 +583,9 @@ function modalOrder(){
     for (let i in user) {
         order = user[i].ordenes
         nome = user[i].nombre
+        apellido = user[i].apellido
+        nombreUser = nome + ' ' + apellido
+        console.log(nombreUser);
         
         for (let q = 0; q < order.length; q++) {
             productName = user[i].ordenes[q].nombreProducto;
@@ -590,7 +594,7 @@ function modalOrder(){
             productPrice = user[i].ordenes[q].precio
 
             //*Compara nombre actual con el del arreglo
-            if (nomUserActual == nome) {
+            if (nomUserActual == nombreUser) {
                 document.getElementById('modalOrder').innerHTML += ` 
                     <div class="col-12">
                         <h2 class="nombre-order">${productName}</h2>
