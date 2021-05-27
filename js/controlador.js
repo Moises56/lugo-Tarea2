@@ -609,6 +609,7 @@ function modalOrder(){
     }
 }
 
+//* mostrar las categorias 
 function modalCategorias(i) {
     indiceSelect = categorias[i].empresas
 
@@ -658,6 +659,7 @@ function modalCategorias(i) {
       });
 }
 
+//* funcion de pedir orden
 function btnPedir(ip){
     let app = indiceSelect
     // console.log(app[0].productos[0].nombreProducto);
