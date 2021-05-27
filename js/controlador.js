@@ -550,13 +550,9 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-            
             `
-            // console.log(app.nombreCategoria);
-
+            // console.log(app.nombreCategoria)
         });
-
-
 })
 
 //* Cambiar de Usuario 
@@ -653,8 +649,7 @@ function modalCategorias(i) {
                         ${html}
                     </div>
                 </div>
-           </div> 
-              
+            </div>            
            `
       });
 }
@@ -698,6 +693,7 @@ function btnPedir(ip){
   
 }
 
+//* guarduar una orden para cada usuario
 function procesarOrden(i){
     let nomUserActual = document.getElementById("usuarioActual").value
     if (nomUserActual == null) {
@@ -727,5 +723,4 @@ function procesarOrden(i){
                 alert('Pedido con Exito')
         }
     }
-
 }
