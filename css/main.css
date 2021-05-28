@@ -29,6 +29,9 @@
     color: aliceblue; 
     border-radius: 1.5rem;
 }
+.categorias-class{
+    padding-block: 100px
+}
 
 .btn-newCategoria{
     background-color: #9141e0;
